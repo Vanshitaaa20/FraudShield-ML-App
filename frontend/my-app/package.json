@@ -11,9 +11,9 @@
   "dependencies": {
     "framer-motion": "^12.23.3",
     "next": "15.3.5",
-    "react": "^19.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-data-table-component": "^7.7.0",
-    "react-dom": "^19.0.0",
     "react-gauge-chart": "^0.5.1"
   },
   "devDependencies": {
