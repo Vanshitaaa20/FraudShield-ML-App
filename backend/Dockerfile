@@ -4,13 +4,13 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Install dependencies early for caching efficiency
-COPY requirements.txt .
+COPY backend/requirements.txt .
 
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code
-COPY . .
+COPY backend /app
 
 # Expose FastAPI port
 EXPOSE 8000
