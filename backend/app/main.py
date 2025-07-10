@@ -14,11 +14,15 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "https://fraud-shield-ml-app-8dmk.vercel.app",
+        "https://fraudshield-ml-app-production.up.railway.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 feature_names = [
     "V1","V2","V3","V4","V5","V6","V7","V8","V9","V10",
