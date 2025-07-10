@@ -13,7 +13,12 @@ A full-stack ML-powered fraud detection dashboard:
 
 ## Run Locally
 **Backend**
-
 ```bash
 cd backend
 uvicorn app.main:app --reload
+```
+
+**Frontend**
+```bash
+cd frontend/my-app
+npm run dev 
