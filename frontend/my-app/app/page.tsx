@@ -34,7 +34,7 @@ export default function Home() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    const res = await fetch('http://127.0.0.1:8000/predict', {
+    const res = await fetch('https://fraudshield-ml-app-production.up.railway.app/predict', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
@@ -65,7 +65,7 @@ export default function Home() {
     }
     const fd = new FormData()
     fd.append('file', file)
-    const res = await fetch('http://127.0.0.1:8000/bulk_predict', {
+    const res = await fetch('fetch("https://fraudshield-ml-app-production.up.railway.app/bulk_predict")', {
       method: 'POST',
       body: fd,
     })
