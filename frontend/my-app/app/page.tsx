@@ -65,7 +65,7 @@ export default function Home() {
     }
     const fd = new FormData()
     fd.append('file', file)
-    const res = await fetch('fetch("https://fraudshield-ml-app-production.up.railway.app/bulk_predict")', {
+    const res = await fetch(("https://fraudshield-ml-app-production.up.railway.app/bulk_predict"), {
       method: 'POST',
       body: fd,
     })
